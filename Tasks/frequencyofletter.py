@@ -1,11 +1,14 @@
 def main():
-  name=input("enter the string: ")
-  for i in range(len(name)-1):
-    count=1
-    for j in range(i+1,len(name)):
-        if(name[i]==name[j]):
-           count+=1
-    print(f'{name[i]} is repeated {count}')
+  name=input("enter the string: ") #Siva
+  list={}
+  for i in name:
+    if i in list:
+      list[i]=list[i]+1
+    else:
+      list[i]=1
+  print(list)      
+
+
 
 
 
