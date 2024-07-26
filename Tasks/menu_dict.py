@@ -40,17 +40,19 @@ def main():
             add_list=input("which starter do you want to add in the menu: ")
             print(add_funtion(veg_starter,add_list,index))
             index+=1
-            break
+            continue
 
             
         elif(choice==3):
             update_list=int(input("enter the number to be update: "))
             update_item=input("enter the item name :")
             print(update_function(veg_starter,update_list,update_item))
+            continue
         
         elif(choice==4):
             remove_list=int(input("enter the number to be removed: "))
             print(remove_function(veg_starter,remove_list))
+            continue
             
         else:
             print("you have enter the wrong choice")
